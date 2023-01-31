@@ -1,0 +1,24 @@
+.navContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: grey;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+.brand {
+    font-size: 4rem;
+    color: red;
+}
+.unorderList {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.listStyle {
+    text-decoration: none;
+}
