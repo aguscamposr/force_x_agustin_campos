@@ -1,12 +1,11 @@
 import React, { useState } from "react";
-import { FaShoppingCart } from "react-icons/fa";
-import { Badge } from "reactstrap";
+import CartWidget from "../cartWidget";
 import './styles.css'
 
 const NavBar = () => {
 
     const [menuOpen, setMenuOpen] = useState(false);
-  const [cartCount, setCartCount] = useState(0);
+ 
 
   const handleMenuClick = () => {
     setMenuOpen(!menuOpen);
@@ -38,10 +37,7 @@ const NavBar = () => {
                 </li>
                 <li className="listStyle">
                     <a href="#home" onClick={handleMenuClick}>
-                    <FaShoppingCart className="navbar__cart-icon" />
-                <Badge className="navbar__cart-count" color="danger">
-                  {cartCount}
-                </Badge>
+                    <CartWidget/>
                     </a>
                 </li>
 
